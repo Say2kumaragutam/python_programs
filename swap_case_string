@@ -1,0 +1,17 @@
+# You are given a string and your task is to swap cases. In other words, convert all lowercase letters to uppercase letters and vice versa.
+# Given Input string= Python
+# Expected Output = pYTHON
+# creating a function for swapping string
+def swap_case(s):
+    string = ""  # taking an empty string
+    for i in s:   # using for loop to hover every word of string
+        if i.isupper() == True:   # if condition will check if a word is upper 
+            string+=(i.lower())    # if condition satisfies string will be appended with lower case word
+        else:   # if not then, string will be appended with upper case of word
+            string+=(i.upper())
+    return string     # string will be returned 
+
+if __name__ == '__main__':
+    s = input()
+    result = swap_case(s)
+    print(result)
